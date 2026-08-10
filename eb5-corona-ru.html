@@ -340,6 +340,15 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 .obj dd { margin: 0; color: var(--ink); }
 @media (max-width: 860px) { .obj { grid-template-columns: 1fr; } }
 
+.gal { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 26px); margin-top: 36px; }
+.gal figure { margin: 0; min-width: 0; }
+.gal img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px;
+  display: block; background: var(--beige); }
+.gal figcaption { margin-top: 11px; font-size: 13px; line-height: 1.5; color: var(--ink-soft); }
+@media (max-width: 900px) { .gal { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .gal { grid-template-columns: minmax(0, 1fr); max-width: 420px; } }
+
 .steps { list-style: none; margin: 44px 0 0; padding: 0;
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 clamp(28px, 4vw, 56px); }
 .steps li { padding: 28px 0; border-top: 1px solid var(--stone); }
@@ -468,15 +477,40 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
     <figure class="rv" style="margin:0"><img src="assets/img/progress/corona-entry.webp" alt="CALMORA 1 — Corona, новый вход после ремонта" loading="lazy" decoding="async"></figure>
     <dl class="rv">
       <dt>Адрес</dt><dd>675 Avenida Terrazo, Corona, CA 92882</dd>
+      <dt>Округ</dt><dd>Riverside County, Южная Калифорния</dd>
       <dt>Юридическое лицо</dt><dd>CALMORA 1 CLF Corona LLC</dd>
       <dt>Тип учреждения</dt><dd>Congregate Living Health Facility (планируется)</dd>
       <dt>Вместимость</dt><dd>6 койко-мест</dd>
+      <dt>Тип здания</dt><dd>Одноэтажный отдельно стоящий дом</dd>
+      <dt>Участок</dt><dd>Огороженный, с бассейном и садом</dd>
+      <dt>Парковка</dt><dd>Пристроенный гараж и подъездная площадка</dd>
       <dt>Приобретён</dt><dd>Ноябрь 2025</dd>
-      <dt>Состояние</dt><dd>Ремонт завершён</dd>
+      <dt>Состояние</dt><dd>Ремонт и переоборудование завершены</dd>
       <dt>Лицензия CDPH</dt><dd>Не получена, заявка готовится</dd>
       <dt>Приём пациентов</dt><dd>Не ведётся</dd>
     </dl>
   </div>
+  <div class="sect-head rv" style="margin-top:clamp(56px,8vh,88px)">
+    <h2 style="font-size:clamp(24px,2.4vw,32px)">Дом после ремонта</h2>
+    <p class="lede" style="margin-top:16px">Фотографии сделаны в августе 2026 года после завершения работ.</p>
+  </div>
+  <div class="gal">
+    <figure class="rv"><img src="assets/img/corona/entry-inside.webp" alt="Corona — входная группа изнутри" loading="lazy" decoding="async"><figcaption>Входная группа: новые двери и остекление над ними</figcaption></figure>
+    <figure class="rv"><img src="assets/img/corona/living.webp" alt="Corona — общая зона" loading="lazy" decoding="async"><figcaption>Общая зона после замены полов и отделки</figcaption></figure>
+    <figure class="rv"><img src="assets/img/corona/room.webp" alt="Corona — комната" loading="lazy" decoding="async"><figcaption>Комната с расширенным дверным проёмом</figcaption></figure>
+    <figure class="rv"><img src="assets/img/corona/hallway.webp" alt="Corona — коридор" loading="lazy" decoding="async"><figcaption>Коридор: ширина рассчитана на перемещение пациентов</figcaption></figure>
+    <figure class="rv"><img src="assets/img/corona/bath-2.webp" alt="Corona — санузел" loading="lazy" decoding="async"><figcaption>Санузел собран заново, безбортовая душевая зона</figcaption></figure>
+    <figure class="rv"><img src="assets/img/corona/vanity.webp" alt="Corona — зона с раковинами" loading="lazy" decoding="async"><figcaption>Зона умывальников и встроенных шкафов</figcaption></figure>
+    <figure class="rv"><img src="assets/img/corona/slider.webp" alt="Corona — выход во двор" loading="lazy" decoding="async"><figcaption>Раздвижная дверь во внутренний двор</figcaption></figure>
+    <figure class="rv"><img src="assets/img/corona/backyard.webp" alt="Corona — задний двор с бассейном" loading="lazy" decoding="async"><figcaption>Огороженный задний двор с бассейном</figcaption></figure>
+  </div>
+
+  <div class="callout rv" style="margin-top:44px">
+    <h3>Что было сделано при переоборудовании</h3>
+    <p>Дом приводился в соответствие с требованиями Title 22 к учреждениям CLHF. Основные работы: расширение дверных проёмов и переборка внутренних перегородок для перемещения пациентов и оборудования; полная переделка санузлов с безбортовыми душевыми зонами; замена полов и отделки; обновление инженерных сетей и наружные работы по подключению коммуникаций.</p>
+    <p>Отдельным пунктом развития остаётся согласование установки резервного генератора — необходимого элемента для учреждения с пациентами на аппаратной поддержке.</p>
+  </div>
+
   <div class="callout warn rv">
     <h3>Текущий статус проекта</h3>
     <p>Ни один объект CALMORA не имеет действующей лицензии CLHF, не введён в эксплуатацию и не принимает пациентов. Заявки на лицензирование находятся в стадии подготовки. Получение лицензий, их сроки и условия не гарантированы.</p>
