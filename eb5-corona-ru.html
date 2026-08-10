@@ -296,16 +296,27 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 .nav-back { margin-left: auto; font-size: 14px; font-weight: 500; color: var(--ink-soft); white-space: nowrap; }
 .nav-back:hover { color: var(--forest); }
 
-.ihero { padding-top: clamp(56px, 8vh, 96px); }
+.ihero { padding-top: clamp(28px, 4vh, 52px); }
 .ihero .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 12px;
   letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; color: var(--forest);
   border: 1px solid var(--sage); border-radius: 999px; padding: 7px 16px; }
-.ihero h1 { font-size: clamp(32px, 4.4vw, 60px); line-height: 1.1; color: var(--charcoal); margin: 26px 0 0; max-width: 18ch; }
-.ihero .lede { margin-top: 24px; max-width: 62ch; }
-.ihero-img { margin-top: clamp(40px, 6vh, 72px); }
-.ihero-img img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: 4px; display: block; }
+.ihero-grid { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  gap: clamp(32px, 4vw, 64px); align-items: center; }
+.ihero h1 { font-size: clamp(29px, 3.1vw, 43px); line-height: 1.16; color: var(--charcoal);
+  margin: 20px 0 0; max-width: 17ch; }
+.ihero h1 .h1-soft { color: var(--warm-gray); }
+.ihero .lede { margin-top: 20px; max-width: 46ch; font-size: clamp(16.5px, 1.25vw, 18px); }
+.hero-note { margin: 14px 0 0; max-width: 46ch; font-size: 15px; line-height: 1.6;
+  color: var(--ink-soft); padding-left: 14px; border-left: 2px solid var(--sage); }
+.ihero-img { margin: 0; }
+.ihero-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; display: block; }
+@media (max-width: 900px) {
+  .ihero-grid { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+  .ihero h1, .ihero .lede, .hero-note { max-width: none; }
+  .ihero-img img { aspect-ratio: 16 / 10; }
+}
 
-.facts { margin-top: clamp(56px, 8vh, 88px); border-top: 1px solid var(--stone); }
+.facts { margin-top: clamp(40px, 5vh, 64px); border-top: 1px solid var(--stone); }
 .facts-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .fact { padding: 34px 26px 36px 0; border-right: 1px solid var(--stone); }
 .fact:last-child { border-right: 0; }
@@ -429,11 +440,11 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 /* ---------- v2 ---------- */
 .badge-conf { display: inline-flex; align-items: center; gap: 9px; font-size: 11.5px;
   letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--warm-gray); }
-.badge-conf::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--sage); }
-.ihero .over { display: block; margin: 22px 0 0; font-size: 12.5px; letter-spacing: 0.2em;
+.badge-conf::before { content: ""; flex: 0 0 auto; align-self: flex-start; margin-top: 5px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--sage); }
+.ihero .over { display: block; margin: 18px 0 0; font-size: 12.5px; letter-spacing: 0.2em;
   text-transform: uppercase; font-weight: 700; color: var(--forest); }
-.ihero h1 { max-width: 20ch; }
-.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
 .btn-line { background: transparent; color: var(--forest); border-color: var(--forest); }
 .btn-line:hover { background: var(--sage-tint); }
 .btn-dark { background: var(--forest); color: var(--paper); }
@@ -562,20 +573,24 @@ blockquote.founder cite { display: block; margin-top: 16px; font-family: var(--s
 </nav>
 
 <header class="ihero wrap">
-  <span class="badge-conf">Конфиденциально · страница доступна по индивидуальной ссылке</span>
-  <span class="over">CALMORA 1 — Corona, Калифорния · EB-5 Direct</span>
-  <h1>Дом куплен. Ремонт завершён. Впереди — лицензия и клиническая команда.</h1>
-  <p class="lede">CALMORA 1 — дом медицинского ухода на шесть мест в Corona, Южная Калифорния. Здание приобретено в ноябре 2025 года, переоборудование под требования Title 22 завершено. Следующий этап — лицензия CDPH и набор персонала: именно найм создаёт рабочие места, которые требует программа EB-5.</p>
-  <p class="lede" style="margin-top:16px">Это прямая инвестиция в конкретное предприятие по конкретному адресу — не доля в фонде и не проект на стадии котлована.</p>
-  <div class="hero-cta">
-    <a href="#object" class="btn btn-dark">Посмотреть объект</a>
-    <a href="#jobs" class="btn btn-line">Как считаются рабочие места</a>
-    <a href="#request" class="btn btn-line">Задать вопрос</a>
+ <div class="ihero-grid">
+  <div class="ihero-copy">
+    <span class="badge-conf">Конфиденциально · по индивидуальной ссылке</span>
+    <span class="over">CALMORA 1 — Corona, Калифорния · EB-5 Direct</span>
+    <h1>Дом куплен. Ремонт завершён. <span class="h1-soft">Впереди — лицензия и команда.</span></h1>
+    <p class="lede">Дом медицинского ухода на шесть мест в Corona, Южная Калифорния. Здание куплено в ноябре 2025 года и переоборудовано под требования Title 22 за счёт компании — до привлечения инвестора. Следующий этап: лицензия CDPH и набор персонала.</p>
+    <p class="hero-note">Прямая инвестиция в конкретное предприятие по конкретному адресу — не доля в фонде и не проект на стадии котлована.</p>
+    <div class="hero-cta">
+      <a href="#object" class="btn btn-dark">Посмотреть объект</a>
+      <a href="#jobs" class="btn btn-line">Как считаются рабочие места</a>
+      <a href="#request" class="btn btn-line">Задать вопрос</a>
+    </div>
+    <p class="microlegal">Это информационная страница, а не предложение ценных бумаг. Условия любой сделки содержатся исключительно в документах размещения.</p>
   </div>
-  <p class="microlegal">Это информационная страница, а не предложение ценных бумаг. Условия любой сделки содержатся исключительно в документах размещения.</p>
-  <figure class="ihero-img rv" style="margin:clamp(40px,6vh,72px) 0 0">
+  <figure class="ihero-img rv">
     <img src="assets/img/residence-corona.webp" alt="CALMORA 1 — Corona, 675 Avenida Terrazo" loading="eager" decoding="async">
   </figure>
+ </div>
 </header>
 
 <section class="facts wrap" aria-label="Факты о проекте">
