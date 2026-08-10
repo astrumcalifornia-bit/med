@@ -318,12 +318,14 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 
 /* hero */
 .hero { padding-top: clamp(72px, 10vh, 128px); }
-.hero-grid { display: grid; grid-template-columns: minmax(0, 7.5fr) minmax(0, 4.5fr); gap: 48px; align-items: end; }
-.hero h1 { font-size: clamp(46px, 6.4vw, 92px); line-height: 1.06; color: var(--charcoal); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(48px, 6vw, 88px); align-items: end; }
+.hero h1 { font-size: clamp(38px, 5vw, 72px); line-height: 1.08; color: var(--charcoal);
+  overflow-wrap: break-word; hyphens: auto; }
 .hero h1 .accent { color: var(--forest); }
 .hero-side { padding-bottom: 10px; }
 .hero-side .lede { font-size: 17.5px; }
 .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 36px; }
+.hero-cta .btn { padding-left: 22px; padding-right: 22px; }
 .hero-note { display: flex; gap: 12px; align-items: center; margin-top: 28px;
   font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--warm-gray); }
 .hero-note .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--sage); }
@@ -691,7 +693,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
       <h2 class="rv">Уход, выстроенный вокруг человека</h2>
       <p class="lede rv">Руководство CALMORA имеет опыт в управлении медицинскими организациями, создании медицинских учреждений, координации лицензирования, постгоспитальном и долгосрочном уходе, хосписной и паллиативной помощи, а также в работе со сложными ранами. Стандарт прост: каждый протокол клинически обоснован, в каждой комнате дневной свет, каждую семью встречает человек, который знает её по имени.</p>
       <blockquote class="rv">«Мы создаём CALMORA, потому что пациенты со сложными медицинскими состояниями заслуживают большего, чем просто место для пребывания после больницы. Наша цель — небольшие дома, где квалифицированный уход, достоинство, участие семьи, безопасность и личное внимание заложены в план ухода за каждым пациентом».</blockquote>
-      <p class="attr">— Don Arthur Estuita · основатель, развитие и операционное управление</p>
+      <p class="attr">— Don Arthur Estuita · со-владелец, генеральный директор</p>
     </div>
     <figure class="rv phil-mark" aria-label="Calmora Health Group">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="24 20 276 86" role="img" aria-label="Calmora — Courtyard, dark">
