@@ -426,10 +426,17 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
   font-family: var(--serif); font-size: 21px; line-height: 1.5; color: var(--forest-deep); }
 .phil figcaption, .phil .attr { margin-top: 14px; font-size: 13px; letter-spacing: 0.14em;
   text-transform: uppercase; font-weight: 600; color: var(--warm-gray); }
-.phil-mark { display: flex; align-items: center; justify-content: center;
-  aspect-ratio: 4 / 4.7; background: var(--forest-deep); border-radius: 4px;
-  padding: clamp(28px, 5vw, 64px); }
-.phil-mark svg { width: 100%; max-width: 340px; height: auto; display: block; }
+.phil-mark { position: relative; display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 4 / 4.7; border-radius: 4px; overflow: hidden;
+  padding: clamp(28px, 5vw, 64px); isolation: isolate; }
+.phil-mark::before { content: ""; position: absolute; inset: 0; z-index: -2;
+  background: url("assets/img/interior.webp") center / cover no-repeat; }
+.phil-mark::after { content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--forest-deep) 74%, transparent) 0%,
+    color-mix(in srgb, var(--forest-deep) 88%, transparent) 100%); }
+.phil-mark svg { width: 100%; max-width: 300px; height: auto; display: block;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.35)); }
 @media (max-width: 900px) { .phil-mark { aspect-ratio: 16 / 9; } }
 @media (max-width: 900px) { .phil { grid-template-columns: 1fr; } .phil figure { order: -1; max-width: 440px; } }
 
