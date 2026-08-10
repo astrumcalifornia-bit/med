@@ -496,6 +496,11 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 @media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .gallery { grid-template-columns: 1fr; max-width: 460px; } }
 
+.milestones-head { font-family: var(--sans); font-size: 12px; letter-spacing: 0.18em;
+  text-transform: uppercase; font-weight: 700; color: var(--forest);
+  margin: clamp(64px, 8vh, 96px) 0 0; }
+.milestones-head + .news-list { margin-top: 24px; }
+
 /* footer */
 .footer { background: var(--charcoal); color: #B9B7AE; margin-top: clamp(96px, 12vh, 160px);
   padding: clamp(64px, 8vh, 96px) 0 56px; font-size: 14px; line-height: 1.7; }
@@ -604,7 +609,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
     <div class="campus-grid">
       <article class="campus rv">
         <figure><img src="assets/img/residence-corona.webp" alt="CALMORA 1 — Corona, 675 Avenida Terrazo" loading="lazy" decoding="async"></figure>
-        <span class="status">In development</span>
+        <span class="status">Renovation complete</span>
         <h3>CALMORA 1 — Corona</h3>
         <p class="addr">675 Avenida Terrazo, Corona, CA 92882</p>
         <p class="open">Opening date to be announced</p>
@@ -740,28 +745,24 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
   </div>
 </section>
 
-<section class="section wrap" id="progress" data-screen-label="Progress">
-  <p class="kicker"><span class="no">09</span> Work in progress</p>
+<section class="section wrap" id="progress" data-screen-label="Building in public">
+  <p class="kicker"><span class="no">09</span> Building, in public</p>
   <div class="sect-head">
-    <h2 class="rv">Inside the conversion</h2>
-    <p class="lede rv">All three properties are being reconfigured for six-bed congregate living care — wider openings, reworked bathrooms, upgraded utilities. Darwin's renovation is complete; Corona and Skyland are in active conversion. Photographed August 2026.</p>
+    <h2 class="rv">Building, in public</h2>
+    <p class="lede rv">Each property is reconfigured for six-bed congregate living care — wider openings, rebuilt bathrooms, upgraded utilities. Corona and Darwin renovations are complete and awaiting licensure; Skyland is in active conversion. Photographed August 2026.</p>
   </div>
   <div class="gallery">
-    <figure class="rv"><img src="assets/img/progress/corona-framing.webp" alt="Corona residence — doorway opening widened during framing" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Openings widened and reframed</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/corona-demolition.webp" alt="Corona residence — interior wall taken back to studs" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Interior taken back to studs</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/corona-utilities.webp" alt="Corona residence — exterior utility trenching" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Utility and infrastructure work</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/corona-entry.webp" alt="Corona residence — new exterior entry doors" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Renovation complete — new entry</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/corona-interior.webp" alt="Corona residence — finished open interior with new flooring" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Finished interior and new flooring</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/corona-bath.webp" alt="Corona residence — newly tiled bathroom" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Rebuilt bathroom, newly tiled</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/darwin-entry.webp" alt="Darwin residence — completed entry and main hallway" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Renovation complete — entry and hallway</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/darwin-kitchen.webp" alt="Darwin residence — finished kitchen and open living area" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Finished kitchen and living area</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/darwin-room.webp" alt="Darwin residence — finished room" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Rooms finished, awaiting licensure</figcaption></figure>
     <figure class="rv"><img src="assets/img/progress/skyland-site.webp" alt="Skyland residence — site set up for interior demolition" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Demolition under way</figcaption></figure>
     <figure class="rv"><img src="assets/img/progress/skyland-reframing.webp" alt="Skyland residence — drywall removed, framing exposed" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Drywall out, framing exposed</figcaption></figure>
     <figure class="rv"><img src="assets/img/progress/skyland-bath.webp" alt="Skyland residence — bathroom stripped for reconfiguration" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Bathroom reconfiguration</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/darwin-entry.webp" alt="Darwin residence — completed entry and main hallway" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Renovation complete — entry and main hallway</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/darwin-kitchen.webp" alt="Darwin residence — finished kitchen and open living area" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Finished kitchen and open living area</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/darwin-room.webp" alt="Darwin residence — finished room" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Rooms finished, awaiting licensure</figcaption></figure>
   </div>
-</section>
-
-<section class="section wrap" id="news" data-screen-label="News">
-  <p class="kicker"><span class="no">10</span> News &amp; milestones</p>
-  <div class="sect-head"><h2 class="rv">Building, in public</h2></div>
+  <h3 class="milestones-head rv">Milestones</h3>
   <ul class="news-list">
     <li class="rv"><span class="d">August 2026</span><div><h3>Development under way at CALMORA 1 — Corona</h3><p>Facility conversion, permitting, and licensing preparation are in progress at the Avenida Terrazo residence — the first in the CALMORA pipeline.</p></div></li>
     <li class="rv"><span class="d">December 2025</span><div><h3>Third property secured, completing the founding network</h3><p>With the Skyland Drive property acquired, CALMORA's initial three-residence development pipeline across Corona and Moreno Valley is complete.</p></div></li>
@@ -793,7 +794,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
         <p><a href="#campuses">Our Residences</a></p>
         <p><a href="#clinical">Clinical Care</a></p>
         <p><a href="#admissions">Admissions</a></p>
-        <p><a href="#progress">Work in Progress</a></p>
+        <p><a href="#progress">Building in Public</a></p>
         <p><a href="#hospitals">For Hospitals</a></p>
         <p><a href="#families">Patients &amp; Families</a></p>
         <p><a href="#careers">Careers</a></p>
