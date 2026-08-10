@@ -296,24 +296,45 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 .nav-back { margin-left: auto; font-size: 14px; font-weight: 500; color: var(--ink-soft); white-space: nowrap; }
 .nav-back:hover { color: var(--forest); }
 
-.ihero { padding-top: clamp(28px, 4vh, 52px); }
+.ihero { padding-top: 0; }
+.ihero-full { position: relative; width: 100%; overflow: hidden;
+  min-height: clamp(520px, 76vh, 760px); display: flex; align-items: flex-end;
+  background: var(--forest-deep); }
+.ihero-full > img { position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 62% 62%; }
+.ihero-full::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(101deg, rgba(12,23,19,.95) 0%, rgba(12,23,19,.92) 26%,
+                            rgba(12,23,19,.80) 44%, rgba(12,23,19,.50) 62%,
+                            rgba(12,23,19,.22) 82%, rgba(12,23,19,.10) 100%),
+    linear-gradient(to top, rgba(12,23,19,.70) 0%, rgba(12,23,19,.10) 46%, rgba(12,23,19,0) 70%); }
+.ihero-overlay { position: relative; z-index: 2; width: 100%;
+  padding-top: clamp(56px, 9vh, 104px); padding-bottom: clamp(44px, 7vh, 76px); }
+.ihero .ihero-overlay .badge-conf { color: color-mix(in srgb, var(--paper) 76%, transparent); }
+.ihero .ihero-overlay .badge-conf::before { background: var(--sage); }
+.ihero .ihero-overlay .over { color: #C6D3BE; }
+.ihero .ihero-overlay h1 { color: var(--paper); }
+.ihero .ihero-overlay h1 .h1-soft { color: #B9C8B1; }
+.ihero .ihero-overlay .lede { color: color-mix(in srgb, var(--paper) 90%, transparent); }
+.ihero .ihero-overlay .btn-solid { background: var(--paper); color: var(--forest-deep); }
+.ihero .ihero-overlay .btn-solid:hover { background: #fff; color: var(--forest-deep); }
+.ihero-below { padding-top: clamp(30px, 4vh, 46px); }
+.hero-note { margin: 0; max-width: 62ch; font-size: 15.5px; line-height: 1.65;
+  color: var(--ink-soft); padding-left: 14px; border-left: 2px solid var(--sage); }
 .ihero .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 12px;
   letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; color: var(--forest);
   border: 1px solid var(--sage); border-radius: 999px; padding: 7px 16px; }
-.ihero-grid { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
-  gap: clamp(32px, 4vw, 64px); align-items: center; }
-.ihero h1 { font-size: clamp(29px, 3.1vw, 43px); line-height: 1.16; color: var(--charcoal);
-  margin: 20px 0 0; max-width: 17ch; }
+.ihero h1 { font-size: clamp(30px, 3.4vw, 48px); line-height: 1.15; color: var(--charcoal);
+  margin: 20px 0 0; max-width: 19ch; }
 .ihero h1 .h1-soft { color: var(--warm-gray); }
-.ihero .lede { margin-top: 20px; max-width: 46ch; font-size: clamp(16.5px, 1.25vw, 18px); }
-.hero-note { margin: 14px 0 0; max-width: 46ch; font-size: 15px; line-height: 1.6;
-  color: var(--ink-soft); padding-left: 14px; border-left: 2px solid var(--sage); }
-.ihero-img { margin: 0; }
-.ihero-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; display: block; }
+.ihero .lede { margin-top: 20px; max-width: 50ch; font-size: clamp(16.5px, 1.25vw, 18px); }
 @media (max-width: 900px) {
-  .ihero-grid { grid-template-columns: minmax(0, 1fr); gap: 34px; }
-  .ihero h1, .ihero .lede, .hero-note { max-width: none; }
-  .ihero-img img { aspect-ratio: 16 / 10; }
+  .ihero-full { min-height: 0; display: block; }
+  .ihero-full > img { position: relative; inset: auto; height: auto; aspect-ratio: 4 / 3; }
+  .ihero-full::after { inset: auto 0 0 0; height: 0; }
+  .ihero-overlay { background: var(--forest-deep);
+    padding-top: clamp(30px, 5vh, 44px); padding-bottom: clamp(30px, 5vh, 44px); }
+  .ihero h1, .ihero .lede { max-width: none; }
 }
 
 .facts { margin-top: clamp(40px, 5vh, 64px); border-top: 1px solid var(--stone); }
@@ -572,25 +593,25 @@ blockquote.founder cite { display: block; margin-top: 16px; font-family: var(--s
   </div>
 </nav>
 
-<header class="ihero wrap">
- <div class="ihero-grid">
-  <div class="ihero-copy">
-    <span class="badge-conf">Конфиденциально · только для личного ознакомления</span>
-    <span class="over">CALMORA 1 — Corona, Калифорния · EB-5 Direct</span>
-    <h1>Дом куплен. Ремонт завершён. <span class="h1-soft">Впереди — лицензия и команда.</span></h1>
-    <p class="lede">Дом медицинского ухода на шесть мест в Corona, Южная Калифорния. Здание куплено в ноябре 2025 года и переоборудовано под требования Title 22 за счёт компании — до привлечения инвестора. Следующий этап: лицензия CDPH и набор персонала.</p>
-    <p class="hero-note">Прямая инвестиция в конкретное предприятие по конкретному адресу — не доля в фонде и не проект на стадии котлована.</p>
-    <div class="hero-cta">
-      <a href="#object" class="btn btn-dark">Посмотреть объект</a>
-      <a href="#jobs" class="btn btn-line">Как считаются рабочие места</a>
-      <a href="#request" class="btn btn-line">Задать вопрос</a>
+<header class="ihero">
+  <div class="ihero-full">
+    <img src="assets/img/hero-corona-wide.webp" alt="CALMORA 1 — Corona, 675 Avenida Terrazo" loading="eager" decoding="async" fetchpriority="high">
+    <div class="ihero-overlay wrap">
+      <span class="badge-conf">Конфиденциально · только для личного ознакомления</span>
+      <span class="over">CALMORA 1 — Corona, Калифорния · EB-5 Direct</span>
+      <h1>Дом куплен. Ремонт завершён. <span class="h1-soft">Впереди — лицензия и команда.</span></h1>
+      <p class="lede">Дом медицинского ухода на шесть мест в Corona, Южная Калифорния. Здание куплено в ноябре 2025 года и переоборудовано под требования Title 22 за счёт компании — до привлечения инвестора. Следующий этап: лицензия CDPH и набор персонала.</p>
+      <div class="hero-cta">
+        <a href="#object" class="btn btn-solid">Посмотреть объект</a>
+        <a href="#jobs" class="btn btn-line on-dark">Как считаются рабочие места</a>
+        <a href="#request" class="btn btn-line on-dark">Задать вопрос</a>
+      </div>
     </div>
+  </div>
+  <div class="ihero-below wrap">
+    <p class="hero-note">Прямая инвестиция в конкретное предприятие по конкретному адресу — не доля в фонде и не проект на стадии котлована.</p>
     <p class="microlegal">Это информационная страница, а не предложение ценных бумаг. Условия любой сделки содержатся исключительно в документах размещения.</p>
   </div>
-  <figure class="ihero-img rv">
-    <img src="assets/img/residence-corona.webp" alt="CALMORA 1 — Corona, 675 Avenida Terrazo" loading="eager" decoding="async">
-  </figure>
- </div>
 </header>
 
 <section class="facts wrap" aria-label="Факты о проекте">
