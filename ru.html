@@ -424,6 +424,11 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
   font-family: var(--serif); font-size: 21px; line-height: 1.5; color: var(--forest-deep); }
 .phil figcaption, .phil .attr { margin-top: 14px; font-size: 13px; letter-spacing: 0.14em;
   text-transform: uppercase; font-weight: 600; color: var(--warm-gray); }
+.phil-mark { display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 4 / 4.7; background: var(--forest-deep); border-radius: 4px;
+  padding: clamp(28px, 5vw, 64px); }
+.phil-mark svg { width: 100%; max-width: 340px; height: auto; display: block; }
+@media (max-width: 900px) { .phil-mark { aspect-ratio: 16 / 9; } }
 @media (max-width: 900px) { .phil { grid-template-columns: 1fr; } .phil figure { order: -1; max-width: 440px; } }
 
 /* timeline */
@@ -688,7 +693,14 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
       <blockquote class="rv">«Мы создаём CALMORA, потому что пациенты со сложными медицинскими состояниями заслуживают большего, чем просто место для пребывания после больницы. Наша цель — небольшие дома, где квалифицированный уход, достоинство, участие семьи, безопасность и личное внимание заложены в план ухода за каждым пациентом».</blockquote>
       <p class="attr">— Don Arthur Estuita · основатель, развитие и операционное управление</p>
     </div>
-    <figure class="rv"><img src="assets/img/interior.webp" alt="Иллюстрация интерьера — дневной свет, дерево, зелень" loading="lazy" decoding="async"></figure>
+    <figure class="rv phil-mark" aria-label="Calmora Health Group">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="24 20 276 86" role="img" aria-label="Calmora — Courtyard, dark">
+        <path d="M28 24 H72 A16 16 0 0 1 88 40 V84 H44 A16 16 0 0 1 28 68 Z" fill="none" stroke="#FAF7F1" stroke-width="7"></path>
+        <circle cx="58" cy="54" r="9" fill="#A9B7A2"></circle>
+        <text x="112" y="70" font-family="Gloock,serif" font-size="44" fill="#FAF7F1">Calmora</text>
+        <text x="115" y="97" font-family="Hanken Grotesk,sans-serif" font-size="13" letter-spacing="7" fill="#A9B7A2">HEALTH GROUP</text>
+      </svg>
+    </figure>
   </div>
 </section>
 
