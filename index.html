@@ -11,9 +11,10 @@
 <meta property="og:url" content="https://astrumcalifornia-bit.github.io/med/">
 <meta property="og:site_name" content="Calmora Health Group">
 <link rel="canonical" href="https://astrumcalifornia-bit.github.io/med/">
-<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png?v=3">
 <link rel="icon" href="favicon.ico" sizes="48x48">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MedicalOrganization","name":"Calmora Health Group","description":"A network of six-bed Congregate Living Health Facilities (CLHF) in development in Southern California, planned to provide 24-hour skilled nursing, ventilator support, tracheostomy care, complex wound care and rehabilitation therapies in home-like residences.","medicalSpecialty":["Nursing","PulmonaryMedicine","PhysicalTherapy"],"foundingDate":"2026","areaServed":["Corona CA","Moreno Valley CA","Riverside County CA","Southern California"],"location":[{"@type":"Place","name":"CALMORA 1 — Corona","address":{"@type":"PostalAddress","streetAddress":"675 Avenida Terrazo","addressLocality":"Corona","addressRegion":"CA","postalCode":"92882"}},{"@type":"Place","name":"CALMORA 2 — Darwin, Moreno Valley","address":{"@type":"PostalAddress","streetAddress":"13531 Darwin Drive","addressLocality":"Moreno Valley","addressRegion":"CA","postalCode":"92555"}},{"@type":"Place","name":"CALMORA 3 — Skyland, Moreno Valley","address":{"@type":"PostalAddress","streetAddress":"24819 Skyland Drive","addressLocality":"Moreno Valley","addressRegion":"CA","postalCode":"92557"}}]}
@@ -285,7 +286,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 .nav-in { max-width: var(--max); margin: 0 auto; padding: 0 var(--edge);
   display: flex; align-items: center; gap: 36px; height: 78px; }
 .brand { display: inline-flex; align-items: center; }
-.brand img { height: 40px; width: auto; display: block; }
+.brand img, .brand svg { height: 40px; width: auto; display: block; }
 .nav-links { display: flex; gap: 32px; margin-left: auto; }
 .nav-links a { font-size: 14.5px; font-weight: 500; color: var(--ink-soft); position: relative; white-space: nowrap; }
 .nav-links a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -6px;
@@ -486,7 +487,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 /* footer */
 .footer { background: var(--charcoal); color: #B9B7AE; margin-top: clamp(96px, 12vh, 160px);
   padding: clamp(64px, 8vh, 96px) 0 56px; font-size: 14px; line-height: 1.7; }
-.footer .brand img { height: 52px; }
+.footer .brand img, .footer .brand svg { height: 52px; }
 .footer .cols { display: grid; grid-template-columns: minmax(0, 4fr) repeat(3, minmax(0, 2.5fr));
   gap: 48px clamp(28px, 4vw, 64px); margin-top: 40px; }
 .footer h4 { font-family: var(--sans); font-size: 12px; letter-spacing: 0.18em;
@@ -511,7 +512,12 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 
 <nav class="nav">
   <div class="nav-in">
-    <a class="brand" href="#" aria-label="Calmora Health Group — home"><img src="assets/img/logo-horizontal.webp" alt="Calmora Health Group"></a>
+    <a class="brand" href="#" aria-label="Calmora Health Group — home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="24 20 276 86" role="img" aria-label="Calmora — Courtyard, light">
+        <path d="M28 24 H72 A16 16 0 0 1 88 40 V84 H44 A16 16 0 0 1 28 68 Z" fill="none" stroke="#29453A" stroke-width="7"></path>
+        <circle cx="58" cy="54" r="9" fill="#A9B7A2"></circle>
+        <text x="112" y="70" font-family="Gloock,serif" font-size="44" fill="#29453A">Calmora</text>
+        <text x="115" y="97" font-family="Hanken Grotesk,sans-serif" font-size="13" letter-spacing="7" fill="#5B5D55">HEALTH GROUP</text>
+      </svg></a>
     <div class="nav-links">
       <a href="#campuses">Residences</a>
       <a href="#clinical">Clinical Care</a>
@@ -734,7 +740,12 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 
 <footer class="footer" id="contact" data-screen-label="Contact &amp; Footer">
   <div class="wrap">
-    <span class="brand"><img src="assets/img/logo-footer.webp" alt="Calmora Health Group"></span>
+    <span class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="24 20 276 86" role="img" aria-label="Calmora — Courtyard, dark">
+        <path d="M28 24 H72 A16 16 0 0 1 88 40 V84 H44 A16 16 0 0 1 28 68 Z" fill="none" stroke="#FAF7F1" stroke-width="7"></path>
+        <circle cx="58" cy="54" r="9" fill="#A9B7A2"></circle>
+        <text x="112" y="70" font-family="Gloock,serif" font-size="44" fill="#FAF7F1">Calmora</text>
+        <text x="115" y="97" font-family="Hanken Grotesk,sans-serif" font-size="13" letter-spacing="7" fill="#A9B7A2">HEALTH GROUP</text>
+      </svg></span>
     <div class="cols">
       <div>
         <h4>Contact</h4>

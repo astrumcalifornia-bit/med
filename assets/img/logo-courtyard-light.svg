@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" viewBox="24 20 276 86" role="img" aria-label="Calmora — Courtyard, light">
+        <path d="M28 24 H72 A16 16 0 0 1 88 40 V84 H44 A16 16 0 0 1 28 68 Z" fill="none" stroke="#29453A" stroke-width="7"></path>
+        <circle cx="58" cy="54" r="9" fill="#A9B7A2"></circle>
+        <text x="112" y="70" font-family="Gloock,serif" font-size="44" fill="#29453A">Calmora</text>
+        <text x="115" y="97" font-family="Hanken Grotesk,sans-serif" font-size="13" letter-spacing="7" fill="#5B5D55">HEALTH GROUP</text>
+      </svg>
