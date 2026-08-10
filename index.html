@@ -484,6 +484,18 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 .news-list p { margin: 8px 0 0; font-size: 15px; color: var(--ink-soft); max-width: 64ch; }
 @media (max-width: 700px) { .news-list li { grid-template-columns: 1fr; } }
 
+/* progress gallery */
+.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 2.4vw, 32px); margin-top: 56px; }
+.gallery figure { margin: 0; }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  display: block; border-radius: 4px; background: var(--beige); }
+.gallery figcaption { margin-top: 14px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.5; }
+.gallery .g-site { display: block; font-size: 11.5px; letter-spacing: 0.18em;
+  text-transform: uppercase; font-weight: 700; color: var(--forest); margin-bottom: 5px; }
+@media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .gallery { grid-template-columns: 1fr; max-width: 460px; } }
+
 /* footer */
 .footer { background: var(--charcoal); color: #B9B7AE; margin-top: clamp(96px, 12vh, 160px);
   padding: clamp(64px, 8vh, 96px) 0 56px; font-size: 14px; line-height: 1.7; }
@@ -523,6 +535,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
       <a href="#clinical">Clinical Care</a>
       <a href="#admissions">Admissions</a>
       <a href="#hospitals">For Hospitals</a>
+      <a href="#progress">Progress</a>
       <a href="#families">Families</a>
       <a href="#careers">Careers</a>
     </div>
@@ -727,8 +740,21 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
   </div>
 </section>
 
+<section class="section wrap" id="progress" data-screen-label="Progress">
+  <p class="kicker"><span class="no">09</span> Work in progress</p>
+  <div class="sect-head">
+    <h2 class="rv">Inside the conversion</h2>
+    <p class="lede rv">Each property is being reconfigured for six-bed congregate living care — wider openings, reworked bathrooms, upgraded utilities. Photographed August 2026.</p>
+  </div>
+  <div class="gallery">
+    <figure class="rv"><img src="assets/img/progress/skyland-site.webp" alt="Skyland residence — site set up for interior demolition" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Demolition under way</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/corona-framing.webp" alt="Corona residence — doorway opening widened during framing" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Openings widened and reframed</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/corona-utilities.webp" alt="Corona residence — exterior utility trenching" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Utility and infrastructure work</figcaption></figure>
+  </div>
+</section>
+
 <section class="section wrap" id="news" data-screen-label="News">
-  <p class="kicker"><span class="no">09</span> News &amp; milestones</p>
+  <p class="kicker"><span class="no">10</span> News &amp; milestones</p>
   <div class="sect-head"><h2 class="rv">Building, in public</h2></div>
   <ul class="news-list">
     <li class="rv"><span class="d">August 2026</span><div><h3>Development under way at CALMORA 1 — Corona</h3><p>Facility conversion, permitting, and licensing preparation are in progress at the Avenida Terrazo residence — the first in the CALMORA pipeline.</p></div></li>
@@ -761,6 +787,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
         <p><a href="#campuses">Our Residences</a></p>
         <p><a href="#clinical">Clinical Care</a></p>
         <p><a href="#admissions">Admissions</a></p>
+        <p><a href="#progress">Work in Progress</a></p>
         <p><a href="#hospitals">For Hospitals</a></p>
         <p><a href="#families">Patients &amp; Families</a></p>
         <p><a href="#careers">Careers</a></p>
