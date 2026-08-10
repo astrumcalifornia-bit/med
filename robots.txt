@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /eb5-corona-ru.html
+
+Sitemap: https://calmorahealth.com/sitemap.xml
