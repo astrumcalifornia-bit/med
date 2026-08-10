@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="ru"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calmora Health Group — Congregate Living Health Facilities in Southern California</title>
-<meta name="description" content="Calmora Health Group is developing a network of six-bed Congregate Living Health Facilities in Southern California — 24-hour skilled nursing, ventilator support and complex care planned in home-like residences. Three residences in development in Corona and Moreno Valley.">
-<meta property="og:title" content="Calmora Health Group — High-Acuity Care, Home-Scale Residences">
-<meta property="og:description" content="Congregate Living Health Facilities in development in Corona and Moreno Valley — ventilator support, complex skilled nursing and rehabilitation. Pre-opening referral inquiries welcome.">
+<title>Calmora Health Group — дома медицинского ухода (CLHF) в Южной Калифорнии</title>
+<meta name="description" content="Calmora Health Group создаёт сеть шестиместных домов медицинского ухода (CLHF) в Южной Калифорнии — круглосуточный квалифицированный сестринский уход, поддержка ИВЛ и сложный уход в домашней обстановке. Три дома в разработке: Корона и Морено-Вэлли.">
+<meta property="og:title" content="Calmora Health Group — сложный медицинский уход в домашнем масштабе">
+<meta property="og:description" content="Дома медицинского ухода (CLHF) в разработке: Корона и Морено-Вэлли — поддержка ИВЛ, сложный сестринский уход и реабилитация. Принимаем предварительные запросы на направление пациентов.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://astrumcalifornia-bit.github.io/med/assets/img/og-image.jpg">
-<meta property="og:url" content="https://astrumcalifornia-bit.github.io/med/">
+<meta property="og:url" content="https://astrumcalifornia-bit.github.io/med/ru.html">
 <meta property="og:site_name" content="Calmora Health Group">
-<link rel="canonical" href="https://astrumcalifornia-bit.github.io/med/">
+<link rel="canonical" href="https://astrumcalifornia-bit.github.io/med/ru.html">
 <link rel="alternate" hreflang="en" href="https://astrumcalifornia-bit.github.io/med/">
 <link rel="alternate" hreflang="ru" href="https://astrumcalifornia-bit.github.io/med/ru.html">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -296,6 +296,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 .nav-links a:hover { color: var(--forest); }
 .nav-links a:hover::after { right: 0; }
 .nav .btn { padding: 11px 22px; font-size: 14px; white-space: nowrap; }
+.btn-short { display: none; }
 .lang { display: inline-flex; align-items: center; gap: 8px; margin-left: 24px; white-space: nowrap;
   font-size: 13px; font-weight: 600; letter-spacing: 0.08em; }
 .lang a { color: var(--warm-gray); }
@@ -305,6 +306,8 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 @media (max-width: 1200px) { .lang { margin-right: 18px; } }
 @media (max-width: 620px) {
   .nav-in { gap: 12px; height: 68px; }
+  .btn-long { display: none; }
+  .btn-short { display: inline; }
   .brand img, .brand svg { height: 32px; }
   .lang { margin-right: 10px; gap: 6px; font-size: 12px; }
   .nav .btn { padding: 9px 14px; font-size: 12.5px; }
@@ -552,201 +555,201 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 
 <nav class="nav">
   <div class="nav-in">
-    <a class="brand" href="#" aria-label="Calmora Health Group — home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="24 20 276 86" role="img" aria-label="Calmora — Courtyard, light">
+    <a class="brand" href="#" aria-label="Calmora Health Group — главная"><svg xmlns="http://www.w3.org/2000/svg" viewBox="24 20 276 86" role="img" aria-label="Calmora — Courtyard, light">
         <path d="M28 24 H72 A16 16 0 0 1 88 40 V84 H44 A16 16 0 0 1 28 68 Z" fill="none" stroke="#29453A" stroke-width="7"></path>
         <circle cx="58" cy="54" r="9" fill="#A9B7A2"></circle>
         <text x="112" y="70" font-family="Gloock,serif" font-size="44" fill="#29453A">Calmora</text>
         <text x="115" y="97" font-family="Hanken Grotesk,sans-serif" font-size="13" letter-spacing="7" fill="#5B5D55">HEALTH GROUP</text>
       </svg></a>
     <div class="nav-links">
-      <a href="#campuses">Residences</a>
-      <a href="#clinical">Clinical Care</a>
-      <a href="#admissions">Admissions</a>
-      <a href="#hospitals">For Hospitals</a>
-      <a href="#progress">Progress</a>
-      <a href="#families">Families</a>
-      <a href="#careers">Careers</a>
+      <a href="#campuses">Дома</a>
+      <a href="#clinical">Уход</a>
+      <a href="#admissions">Поступление</a>
+      <a href="#hospitals">Больницам</a>
+      <a href="#progress">Ход работ</a>
+      <a href="#families">Семьям</a>
+      <a href="#careers">Вакансии</a>
     </div>
-    <span class="lang"><span class="on">EN</span><a href="ru.html">RU</a></span>
-    <a href="#hospitals" class="btn btn-solid">Refer a Patient</a>
+    <span class="lang"><a href="index.html">EN</a><span class="on">RU</span></span>
+    <a href="#hospitals" class="btn btn-solid"><span class="btn-long">Направить пациента</span><span class="btn-short">Направить</span></a>
   </div>
 </nav>
 
 <header class="hero wrap" data-screen-label="Hero">
   <div class="hero-grid">
-    <h1>Serious medicine.<br><span class="accent">A gentler place</span> to heal.</h1>
+    <h1>Серьёзная медицина.<br><span class="accent">Более тёплое место</span> для выздоровления.</h1>
     <div class="hero-side">
-      <p class="lede">Calmora Health Group is developing a network of six-bed Congregate Living Health Facilities in Southern California — 24-hour skilled nursing, ventilator support and complex care planned in home-like residences.</p>
+      <p class="lede">Calmora Health Group создаёт сеть шестиместных домов медицинского ухода (Congregate Living Health Facility, CLHF) в Южной Калифорнии — круглосуточный квалифицированный сестринский уход, поддержка ИВЛ и сложный уход в домашней обстановке.</p>
       <div class="hero-cta">
-        <a href="#hospitals" class="btn btn-solid">Refer a Patient</a>
-        <a href="#campuses" class="btn btn-line">Our Residences</a>
+        <a href="#hospitals" class="btn btn-solid">Направить пациента</a>
+        <a href="#campuses" class="btn btn-line">Наши дома</a>
       </div>
-      <p class="hero-note"><span class="dot"></span> Three residences in development</p>
+      <p class="hero-note"><span class="dot"></span> Три дома в разработке</p>
     </div>
   </div>
   <figure class="hero-figure rv">
-    <img src="assets/img/hero-corona.webp" alt="CALMORA 1 — Corona, 675 Avenida Terrazo" loading="eager" decoding="async">
-    <figcaption class="hero-caption">CALMORA 1 — Corona, California</figcaption>
+    <img src="assets/img/hero-corona.webp" alt="CALMORA 1 — Корона, 675 Avenida Terrazo" loading="eager" decoding="async">
+    <figcaption class="hero-caption">CALMORA 1 — Корона, Калифорния</figcaption>
   </figure>
 </header>
 
-<section class="stats wrap" aria-label="Calmora by the numbers" data-screen-label="Stats">
+<section class="stats wrap" aria-label="Calmora в цифрах" data-screen-label="Stats">
   <div class="stat-row">
-    <div class="stat rv"><div class="n">3</div><div class="l">Residences in development</div></div>
-    <div class="stat rv"><div class="n">24/7</div><div class="l">Skilled nursing planned at every residence</div></div>
-    <div class="stat rv"><div class="n">18</div><div class="l">Beds across the initial network</div></div>
-    <div class="stat rv"><div class="n">6</div><div class="l">Beds per residence — care stays personal</div></div>
+    <div class="stat rv"><div class="n">3</div><div class="l">Дома в разработке</div></div>
+    <div class="stat rv"><div class="n">24/7</div><div class="l">Сестринский уход в каждом доме</div></div>
+    <div class="stat rv"><div class="n">18</div><div class="l">Койко-мест в первой сети</div></div>
+    <div class="stat rv"><div class="n">6</div><div class="l">Мест в доме — уход остаётся личным</div></div>
   </div>
 </section>
 
 <section class="section wrap" id="mission" data-screen-label="Mission">
-  <p class="kicker"><span class="no">01</span> Our mission</p>
+  <p class="kicker"><span class="no">01</span> Наша миссия</p>
   <div class="mission-grid">
-    <h2 class="rv">Serious clinical care, at human scale.</h2>
+    <h2 class="rv">Серьёзный клинический уход в человеческом масштабе.</h2>
     <div class="mission-copy rv">
-      <p><strong>A Congregate Living Health Facility (CLHF) is a licensed residential healthcare facility for patients whose needs are too complex for ordinary residential care, but who generally no longer require an acute-care hospital.</strong> Care is more medically intensive than a typical skilled nursing setting — 24-hour skilled nursing, ventilator support and management, tracheostomy care, complex wounds, IV therapy — delivered in a six-bed residence where every patient is known by name, by history, and by what matters to them.</p>
-      <p>A CLHF is not assisted living, a board-and-care home, a nursing home, a hospice residence, or a private home with caregivers. It is a regulated healthcare facility where medically complex residents receive continuing nursing and clinical support in a residential setting.</p>
-      <p>Our mission: to provide compassionate, clinically responsible, and individualized care for medically complex individuals in a safe, dignified, and home-like residential environment — combining the clinical discipline of a licensed healthcare facility with the personal attention a six-bed residence makes possible.</p>
+      <p><strong>Congregate Living Health Facility (CLHF) — это лицензированное медицинское учреждение жилого типа для пациентов, чьи потребности слишком сложны для обычного проживания с уходом, но которые, как правило, уже не нуждаются в больнице интенсивного лечения.</strong> Уход здесь более интенсивный, чем в типичном учреждении сестринского ухода: круглосуточный квалифицированный сестринский уход, поддержка и ведение ИВЛ, уход за трахеостомой, сложные раны, внутривенная терапия — в доме на шесть мест, где каждого пациента знают по имени, по истории болезни и по тому, что для него важно.</p>
+      <p>CLHF — это не пансионат с уходом, не дом престарелых, не хоспис и не частный дом с сиделками. Это регулируемое медицинское учреждение, где пациенты со сложными состояниями получают постоянную сестринскую и клиническую поддержку в домашней обстановке.</p>
+      <p>Наша миссия: обеспечивать сострадательный, клинически ответственный и индивидуальный уход за людьми со сложными медицинскими состояниями в безопасной, достойной и домашней среде — сочетая дисциплину лицензированного медицинского учреждения с личным вниманием, которое возможно в доме на шесть мест.</p>
     </div>
   </div>
 </section>
 
 <section class="section wrap" data-screen-label="Why Calmora">
-  <p class="kicker"><span class="no">02</span> Why Calmora</p>
+  <p class="kicker"><span class="no">02</span> Почему Calmora</p>
   <div class="sect-head">
-    <h2 class="rv">What we're building differently</h2>
+    <h2 class="rv">Что мы делаем иначе</h2>
   </div>
   <div class="why-list">
-    <div class="why rv"><span class="idx">i.</span><h3>A home, developed for complex care</h3><p>Each property is being developed and equipped specifically for this level of care: natural daylight, quiet rooms, and a garden outside a real window. Environment shapes recovery — so we treat the home itself as part of the plan of care.</p></div>
-    <div class="why rv"><span class="idx">ii.</span><h3>A partner hospitals can count on</h3><p>A structured clinical review of every referral, honest answers on capability and availability, and coordinated transition planning. Discharge should be a warm handoff, not a leap of faith.</p></div>
-    <div class="why rv"><span class="idx">iii.</span><h3>Families stay part of the team</h3><p>Open visiting, plain-language updates, and a care team that explains every decision. Healing goes better when the people who love you are in the room.</p></div>
+    <div class="why rv"><span class="idx">i.</span><h3>Дом, подготовленный для сложного ухода</h3><p>Каждый объект переоборудуется и оснащается именно под этот уровень ухода: естественный свет, тихие комнаты, сад за настоящим окном. Среда влияет на восстановление — поэтому сам дом мы считаем частью плана лечения.</p></div>
+    <div class="why rv"><span class="idx">ii.</span><h3>Партнёр, на которого можно положиться</h3><p>Структурированный клинический разбор каждого направления, честные ответы о наших возможностях и наличии мест, согласованное планирование перевода. Выписка должна быть спокойной передачей пациента, а не прыжком в неизвестность.</p></div>
+    <div class="why rv"><span class="idx">iii.</span><h3>Семья остаётся частью команды</h3><p>Свободное посещение, понятные объяснения без медицинского жаргона и команда, которая обосновывает каждое решение. Восстановление идёт лучше, когда рядом близкие.</p></div>
   </div>
 </section>
 
 <section class="campuses-bg" id="campuses" data-screen-label="Three Residences">
   <div class="wrap">
-    <p class="kicker"><span class="no">03</span> In development</p>
+    <p class="kicker"><span class="no">03</span> В разработке</p>
     <div class="sect-head">
-      <h2 class="rv">Three residences, purpose-developed for complex care</h2>
-      <p class="lede rv">Each CALMORA residence is being developed as a licensed six-bed home — residential in scale and feel, with the clinical infrastructure medically complex care requires.</p>
+      <h2 class="rv">Три дома, подготовленных для сложного ухода</h2>
+      <p class="lede rv">Каждый дом CALMORA готовится как лицензированный дом на шесть мест — жилой по масштабу и ощущению, с клинической инфраструктурой, которой требует сложный медицинский уход.</p>
     </div>
     <div class="campus-grid">
       <article class="campus rv">
-        <figure><img src="assets/img/residence-corona.webp" alt="CALMORA 1 — Corona, 675 Avenida Terrazo" loading="lazy" decoding="async"></figure>
-        <span class="status">Renovation complete</span>
-        <h3>CALMORA 1 — Corona</h3>
+        <figure><img src="assets/img/residence-corona.webp" alt="CALMORA 1 — Корона, 675 Avenida Terrazo" loading="lazy" decoding="async"></figure>
+        <span class="status">Ремонт завершён</span>
+        <h3>CALMORA 1 — Корона</h3>
         <p class="addr">675 Avenida Terrazo, Corona, CA 92882</p>
-        <p class="open">Opening date to be announced</p>
+        <p class="open">Дата открытия будет объявлена</p>
       </article>
       <article class="campus rv">
-        <figure><img src="assets/img/residence-darwin.webp" alt="CALMORA 2 — Darwin, 13531 Darwin Drive, Moreno Valley" loading="lazy" decoding="async"></figure>
-        <span class="status">Renovation complete</span>
-        <h3>CALMORA 2 — Darwin, Moreno Valley</h3>
+        <figure><img src="assets/img/residence-darwin.webp" alt="CALMORA 2 — Дарвин, 13531 Darwin Drive, Морено-Вэлли" loading="lazy" decoding="async"></figure>
+        <span class="status">Ремонт завершён</span>
+        <h3>CALMORA 2 — Дарвин, Морено-Вэлли</h3>
         <p class="addr">13531 Darwin Drive, Moreno Valley, CA 92555</p>
-        <p class="open">Opening date to be announced</p>
+        <p class="open">Дата открытия будет объявлена</p>
       </article>
       <article class="campus rv">
-        <figure><img src="assets/img/residence-skyland.webp" alt="CALMORA 3 — Skyland, 24819 Skyland Drive, Moreno Valley" loading="lazy" decoding="async"></figure>
-        <span class="status future">In development</span>
-        <h3>CALMORA 3 — Skyland, Moreno Valley</h3>
+        <figure><img src="assets/img/residence-skyland.webp" alt="CALMORA 3 — Скайлэнд, 24819 Skyland Drive, Морено-Вэлли" loading="lazy" decoding="async"></figure>
+        <span class="status future">В работе</span>
+        <h3>CALMORA 3 — Скайлэнд, Морено-Вэлли</h3>
         <p class="addr">24819 Skyland Drive, Moreno Valley, CA 92557</p>
-        <p class="open">Opening date to be announced</p>
+        <p class="open">Дата открытия будет объявлена</p>
       </article>
     </div>
   </div>
 </section>
 
 <section class="section wrap" id="clinical" data-screen-label="Clinical Programs">
-  <p class="kicker"><span class="no">04</span> Clinical programs</p>
+  <p class="kicker"><span class="no">04</span> Клинические программы</p>
   <div class="sect-head">
-    <h2 class="rv">Planned clinical capabilities</h2>
+    <h2 class="rv">Планируемые клинические возможности</h2>
   </div>
   <div class="clinical-grid">
-    <div class="svc rv"><h3>Respiratory &amp; ventilator care</h3><p>Ventilator support and management, tracheostomy care and suctioning, airway management, oxygen therapy, and respiratory monitoring — in coordination with respiratory therapists, pulmonologists, and equipment providers.</p></div>
-    <div class="svc rv"><h3>Complex skilled nursing</h3><p>24-hour skilled nursing: assessments and monitoring, medication administration and management, complex wound care, catheter and ostomy care — with IV therapy and line care based on physician orders and facility capability.</p></div>
-    <div class="svc rv"><h3>Rehabilitation therapies</h3><p>Physical, occupational, and speech therapy — provided or coordinated according to each patient's individualized plan of care. Progress is measured in what matters: a first step, a first word, a meal at the table.</p></div>
-    <div class="svc rv"><h3>Whole-person support</h3><p>Enteral nutrition and dietary support, social services, recreational programming, family education and care conferences — and discharge and transition planning from the day of admission.</p></div>
+    <div class="svc rv"><h3>Респираторный уход и ИВЛ</h3><p>Поддержка и ведение ИВЛ, уход за трахеостомой и санация дыхательных путей, обеспечение проходимости дыхательных путей, кислородная терапия и респираторный мониторинг — совместно с респираторными терапевтами, пульмонологами и поставщиками оборудования.</p></div>
+    <div class="svc rv"><h3>Сложный сестринский уход</h3><p>Круглосуточный квалифицированный сестринский уход: оценка состояния и наблюдение, введение и контроль лекарств, уход за сложными ранами, катетерами и стомами; внутривенная терапия и уход за катетерами — по назначению врача и в пределах возможностей учреждения.</p></div>
+    <div class="svc rv"><h3>Реабилитация</h3><p>Физическая, эрготерапия и логопедия — предоставляются или координируются в соответствии с индивидуальным планом ухода. Прогресс измеряется в том, что действительно важно: первый шаг, первое слово, приём пищи за столом.</p></div>
+    <div class="svc rv"><h3>Поддержка человека целиком</h3><p>Энтеральное питание и диетологическая поддержка, социальная работа, досуговые программы, обучение родственников и семейные консилиумы — а также планирование выписки и перехода с первого дня пребывания.</p></div>
   </div>
   <div class="conditions rv">
-    <h3>Who we plan to care for</h3>
+    <h3>Кому планируем помогать</h3>
     <ul class="cond-list">
-      <li>Ventilator dependence</li><li>Tracheostomy care</li><li>Complex respiratory needs</li><li>Enteral feeding</li><li>Complex &amp; chronic wounds</li><li>IV therapy needs</li><li>Neurological &amp; neuromuscular conditions</li><li>Spinal cord injury</li><li>Traumatic brain injury</li><li>Complex medication regimens</li><li>Ongoing rehabilitation</li>
+      <li>Зависимость от ИВЛ</li><li>Уход за трахеостомой</li><li>Сложные респираторные потребности</li><li>Энтеральное питание</li><li>Сложные и хронические раны</li><li>Внутривенная терапия</li><li>Неврологические и нервно-мышечные заболевания</li><li>Травма спинного мозга</li><li>Черепно-мозговая травма</li><li>Сложные схемы лечения</li><li>Продолжающаяся реабилитация</li>
     </ul>
-    <p style="margin:20px 0 0;font-size:13.5px;color:var(--ink-soft);max-width:80ch;">Proposed patient profile. Every patient undergoes an individual clinical review before admission — the ability to admit depends on licensure, physician orders, staffing, equipment, and bed availability.</p>
+    <p style="margin:20px 0 0;font-size:13.5px;color:var(--ink-soft);max-width:80ch;">Предполагаемый профиль пациентов. Каждый пациент проходит индивидуальный клинический разбор до поступления — возможность приёма зависит от лицензии, назначений врача, укомплектованности персоналом, оборудования и наличия мест.</p>
   </div>
 </section>
 
 <section class="section wrap" id="philosophy" data-screen-label="Clinical Philosophy">
-  <p class="kicker"><span class="no">05</span> Our philosophy</p>
+  <p class="kicker"><span class="no">05</span> Наша философия</p>
   <div class="phil">
     <div>
-      <h2 class="rv">Care designed around people</h2>
-      <p class="lede rv">CALMORA's leadership brings experience across healthcare operations, healthcare-facility development, regulatory and licensing coordination, post-acute and long-term care, hospice and palliative care, and complex wound-care operations. The standard is simple: every protocol clinically responsible, every room filled with daylight, every family greeted by someone who knows their name.</p>
-      <blockquote class="rv">“We are building CALMORA because medically complex patients deserve more than simply a place to stay after leaving the hospital. Our goal is to create smaller residences where skilled care, dignity, family involvement, safety, and personal attention are incorporated into every patient's plan of care.”</blockquote>
-      <p class="attr">— Don Arthur Estuita · Founder, Development &amp; Operations</p>
+      <h2 class="rv">Уход, выстроенный вокруг человека</h2>
+      <p class="lede rv">Руководство CALMORA имеет опыт в управлении медицинскими организациями, создании медицинских учреждений, координации лицензирования, постгоспитальном и долгосрочном уходе, хосписной и паллиативной помощи, а также в работе со сложными ранами. Стандарт прост: каждый протокол клинически обоснован, в каждой комнате дневной свет, каждую семью встречает человек, который знает её по имени.</p>
+      <blockquote class="rv">«Мы создаём CALMORA, потому что пациенты со сложными медицинскими состояниями заслуживают большего, чем просто место для пребывания после больницы. Наша цель — небольшие дома, где квалифицированный уход, достоинство, участие семьи, безопасность и личное внимание заложены в план ухода за каждым пациентом».</blockquote>
+      <p class="attr">— Don Arthur Estuita · основатель, развитие и операционное управление</p>
     </div>
-    <figure class="rv"><img src="assets/img/interior.webp" alt="Illustrative interior rendering — daylight, natural wood, greenery" loading="lazy" decoding="async"></figure>
+    <figure class="rv"><img src="assets/img/interior.webp" alt="Иллюстрация интерьера — дневной свет, дерево, зелень" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
 <section class="section wrap" id="timeline" data-screen-label="Timeline">
-  <p class="kicker"><span class="no">06</span> The road to opening</p>
-  <div class="sect-head"><h2 class="rv">From development to opening</h2><p class="lede rv">Projected timelines are management estimates and are subject to changes in construction, permitting, inspections, utility work, licensing, staffing, equipment procurement, payer enrollment, financing, and other regulatory or operational conditions.</p></div>
+  <p class="kicker"><span class="no">06</span> Путь к открытию</p>
+  <div class="sect-head"><h2 class="rv">От разработки до открытия</h2><p class="lede rv">Указанные сроки — это оценки руководства. Они могут измениться в зависимости от хода строительства, получения разрешений, проверок, работ по инженерным сетям, лицензирования, найма персонала, закупки оборудования, включения в реестры плательщиков, финансирования и других регуляторных или операционных условий.</p></div>
   <ol class="tl">
-    <li class="done rv"><span class="d">Complete</span><span class="w">Network founded</span><span class="n">Three properties secured across Corona and Moreno Valley.</span></li>
-    <li class="next rv"><span class="d">In progress</span><span class="w">Development &amp; conversion</span><span class="n">CALMORA 1 — Corona leads the pipeline; Darwin and Skyland follow.</span></li>
-    <li class="rv"><span class="d">Upcoming</span><span class="w">CDPH licensing</span><span class="n">Licensing preparation for each residence.</span></li>
-    <li class="rv"><span class="d">Upcoming</span><span class="w">Staffing &amp; readiness</span><span class="n">Clinical teams, equipment, and operational readiness.</span></li>
-    <li class="rv"><span class="d">To be announced</span><span class="w">Openings</span><span class="n">Corona first, followed by Darwin and Skyland.</span></li>
-    <li class="rv"><span class="d">Ahead</span><span class="w">Southern California expansion</span><span class="n">New residences where hospital partners need us most.</span></li>
+    <li class="done rv"><span class="d">Выполнено</span><span class="w">Сеть сформирована</span><span class="n">Три объекта приобретены в Короне и Морено-Вэлли.</span></li>
+    <li class="next rv"><span class="d">В работе</span><span class="w">Переоборудование</span><span class="n">Корона и Дарвин готовы; Скайлэнд в активной работе.</span></li>
+    <li class="rv"><span class="d">Далее</span><span class="w">Лицензирование CDPH</span><span class="n">Подготовка к лицензированию каждого дома.</span></li>
+    <li class="rv"><span class="d">Далее</span><span class="w">Персонал и готовность</span><span class="n">Клинические команды, оборудование, операционная готовность.</span></li>
+    <li class="rv"><span class="d">Будет объявлено</span><span class="w">Открытие</span><span class="n">Сначала Корона, затем Дарвин и Скайлэнд.</span></li>
+    <li class="rv"><span class="d">В перспективе</span><span class="w">Развитие в Южной Калифорнии</span><span class="n">Новые дома там, где они больше всего нужны партнёрам-больницам.</span></li>
   </ol>
 </section>
 
 <section class="section wrap" id="admissions" data-screen-label="Admissions">
-  <p class="kicker"><span class="no">07</span> Admissions</p>
+  <p class="kicker"><span class="no">07</span> Поступление</p>
   <div class="sect-head">
-    <h2 class="rv">How a referral becomes an admission</h2>
-    <p class="lede rv">Every referral follows the same structured path — so hospitals, families, and health plans always know where things stand.</p>
+    <h2 class="rv">Как направление становится поступлением</h2>
+    <p class="lede rv">Каждое направление проходит один и тот же путь — чтобы больницы, семьи и страховые всегда понимали, на каком этапе находится решение.</p>
   </div>
   <ol class="steps">
-    <li class="rv"><span class="s-n">01</span><h3>Referral or inquiry</h3><p>A hospital, case manager, physician, health plan, family member, or authorized representative contacts Calmora.</p></li>
-    <li class="rv"><span class="s-n">02</span><h3>Clinical review</h3><p>Records are submitted securely. A qualified clinical professional reviews medical condition, nursing and respiratory needs, medications, nutrition, equipment, rehabilitation needs, and safety risks.</p></li>
-    <li class="rv"><span class="s-n">03</span><h3>Capability assessment</h3><p>We confirm whether the residence has the license, bed availability, staffing, competencies, and equipment to care for the patient safely.</p></li>
-    <li class="rv"><span class="s-n">04</span><h3>Payer verification</h3><p>Eligibility, authorization, benefits, and payer requirements are reviewed.</p></li>
-    <li class="rv"><span class="s-n">05</span><h3>Transition coordination</h3><p>On acceptance, we coordinate physician orders, pharmacy, respiratory and durable medical equipment, nutrition, transport, and the discharge plan.</p></li>
-    <li class="rv"><span class="s-n">06</span><h3>Admission &amp; plan of care</h3><p>The nursing and interdisciplinary team completes required assessments and begins the individualized plan of care.</p></li>
+    <li class="rv"><span class="s-n">01</span><h3>Направление или запрос</h3><p>С Calmora связывается больница, кейс-менеджер, врач, страховая, член семьи или уполномоченный представитель.</p></li>
+    <li class="rv"><span class="s-n">02</span><h3>Клинический разбор</h3><p>Медицинские документы передаются по защищённому каналу. Квалифицированный специалист оценивает состояние, потребности в сестринском и респираторном уходе, лекарства, питание, оборудование, реабилитацию и риски безопасности.</p></li>
+    <li class="rv"><span class="s-n">03</span><h3>Оценка возможностей</h3><p>Мы подтверждаем, что у дома есть лицензия, свободное место, персонал, компетенции и оборудование, чтобы безопасно обеспечить уход.</p></li>
+    <li class="rv"><span class="s-n">04</span><h3>Проверка оплаты</h3><p>Проверяются право на покрытие, авторизация, объём страховых выплат и требования плательщика.</p></li>
+    <li class="rv"><span class="s-n">05</span><h3>Координация перевода</h3><p>После согласия мы координируем назначения врача, аптеку, респираторное и медицинское оборудование, питание, транспорт и план выписки.</p></li>
+    <li class="rv"><span class="s-n">06</span><h3>Поступление и план ухода</h3><p>Сестринская и междисциплинарная команда проводит необходимые обследования и начинает индивидуальный план ухода.</p></li>
   </ol>
   <div class="payers rv">
-    <h3>Planned payer sources</h3>
+    <h3>Планируемые источники оплаты</h3>
     <ul class="cond-list">
-      <li>Medi-Cal</li><li>Medi-Cal managed care</li><li>HCBA Waiver arrangements</li><li>Commercial &amp; private insurance</li><li>Workers' compensation</li><li>Private pay</li>
+      <li>Medi-Cal</li><li>Medi-Cal managed care</li><li>Программа HCBA Waiver</li><li>Коммерческие и частные страховки</li><li>Страхование производственных травм</li><li>Прямая оплата</li>
     </ul>
-    <p style="margin:20px 0 0;font-size:13.5px;color:var(--ink-soft);max-width:80ch;">All payer participation is subject to enrollment, contracting, authorization, and applicable benefits.</p>
+    <p style="margin:20px 0 0;font-size:13.5px;color:var(--ink-soft);max-width:80ch;">Работа с любым плательщиком зависит от регистрации, заключения договора, авторизации и условий покрытия.</p>
   </div>
 </section>
 
 <section class="refer-bg" id="hospitals" data-screen-label="For Hospitals — Referral">
   <div class="wrap refer-grid">
     <div>
-      <p class="kicker"><span class="no">08</span> For hospitals &amp; case managers</p>
-      <h2 class="rv">Start a referral conversation</h2>
-      <p class="lede rv">We welcome pre-opening referral inquiries. We aim to acknowledge inquiries within one business day; the time required for a complete clinical review depends on the availability and completeness of medical records, patient complexity, bed availability, staffing, equipment requirements, and payer authorization.</p>
+      <p class="kicker"><span class="no">08</span> Больницам и кейс-менеджерам</p>
+      <h2 class="rv">Начните разговор о направлении</h2>
+      <p class="lede rv">Мы принимаем предварительные запросы на направление до открытия. Мы стремимся подтвердить получение запроса в течение одного рабочего дня; срок полного клинического разбора зависит от наличия и полноты медицинских документов, сложности случая, наличия мест, персонала, требований к оборудованию и авторизации плательщика.</p>
       <ul class="refer-promise rv">
-        <li>Structured clinical review of every referral</li>
-        <li>Direct coordination with discharge planners and case managers</li>
-        <li>Honest answers on capability, availability, and payer authorization</li>
+        <li>Структурированный клинический разбор каждого направления</li>
+        <li>Прямая работа со специалистами по выписке и кейс-менеджерами</li>
+        <li>Честные ответы о возможностях, наличии мест и авторизации оплаты</li>
       </ul>
     </div>
     <form class="refer-form rv">
-      <div class="field"><label for="rf-name">Your name</label><input class="input" id="rf-name" type="text" autocomplete="name"></div>
-      <div class="field"><label for="rf-role">Role</label><input class="input" id="rf-role" type="text" placeholder="Case manager, discharge planner…"></div>
-      <div class="field"><label for="rf-org">Hospital / organization</label><input class="input" id="rf-org" type="text"></div>
-      <div class="field"><label for="rf-email">Work email</label><input class="input" id="rf-email" type="email" autocomplete="email"></div>
-      <div class="field field-full"><label for="rf-needs">Clinical needs &amp; discharge window</label><textarea class="input" id="rf-needs" rows="4" placeholder="No patient-identifying information, please."></textarea></div>
+      <div class="field"><label for="rf-name">Ваше имя</label><input class="input" id="rf-name" type="text" autocomplete="name"></div>
+      <div class="field"><label for="rf-role">Должность</label><input class="input" id="rf-role" type="text" placeholder="Кейс-менеджер, специалист по выписке…"></div>
+      <div class="field"><label for="rf-org">Больница / организация</label><input class="input" id="rf-org" type="text"></div>
+      <div class="field"><label for="rf-email">Рабочий email</label><input class="input" id="rf-email" type="email" autocomplete="email"></div>
+      <div class="field field-full"><label for="rf-needs">Клинические потребности и сроки выписки</label><textarea class="input" id="rf-needs" rows="4" placeholder="Пожалуйста, без данных, позволяющих идентифицировать пациента."></textarea></div>
       <div class="actions">
-        <button type="button" class="btn btn-solid">Send referral inquiry</button>
-        <p class="fine">Please don't include protected health information.</p>
-        <p class="fine" style="max-width:100%;">Submission of a referral does not guarantee admission. Every referral is subject to clinical review, licensing requirements, bed availability, staffing capability, equipment availability, and payer authorization.</p>
+        <button type="button" class="btn btn-solid">Отправить запрос</button>
+        <p class="fine">Пожалуйста, не указывайте защищённую медицинскую информацию.</p>
+        <p class="fine" style="max-width:100%;">Отправка направления не гарантирует поступление. Каждое направление рассматривается с учётом клинического разбора, требований лицензирования, наличия мест, возможностей персонала, наличия оборудования и авторизации плательщика.</p>
       </div>
     </form>
   </div>
@@ -755,42 +758,42 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
 <section class="section wrap" id="families" data-screen-label="Families &amp; Careers">
   <div class="duo">
     <div class="panel rv">
-      <span class="tag">Patients &amp; families</span>
-      <h3>What to expect</h3>
-      <p>Admissions guidance, insurance help, open visiting, and honest answers at every step. Ahead of opening, we can help you understand whether a CLHF is the right level of care for your family — no obligation, no jargon.</p>
-      <a href="#contact" class="btn btn-line">Talk with our team</a>
+      <span class="tag">Пациентам и семьям</span>
+      <h3>Чего ожидать</h3>
+      <p>Помощь с поступлением, разбор страховых вопросов, свободное посещение и честные ответы на каждом шаге. До открытия мы поможем понять, подходит ли уровень ухода CLHF вашей семье — без обязательств и без медицинского жаргона.</p>
+      <a href="#contact" class="btn btn-line">Поговорить с нами</a>
     </div>
     <div class="panel sage rv" id="careers">
-      <span class="tag">Careers</span>
-      <h3>Build this with us</h3>
-      <p>We're building teams of registered nurses, licensed vocational nurses, respiratory therapists, rehabilitation therapists (PT, OT, SLP), and support staff for all three residences. Six-bed settings, close clinical teamwork, and leadership that listens.</p>
-      <a href="#contact" class="btn btn-line">Join our talent network</a>
+      <span class="tag">Вакансии</span>
+      <h3>Стройте это вместе с нами</h3>
+      <p>Мы формируем команды дипломированных медсестёр (RN), лицензированных медсестёр (LVN), респираторных терапевтов, специалистов по реабилитации (PT, OT, SLP) и вспомогательного персонала для всех трёх домов. Дома на шесть мест, тесная командная работа и руководство, которое слышит.</p>
+      <a href="#contact" class="btn btn-line">Оставить заявку</a>
     </div>
   </div>
 </section>
 
 <section class="section wrap" id="progress" data-screen-label="Building in public">
-  <p class="kicker"><span class="no">09</span> Building, in public</p>
+  <p class="kicker"><span class="no">09</span> Как идёт работа</p>
   <div class="sect-head">
-    <h2 class="rv">Building, in public</h2>
-    <p class="lede rv">Each property is reconfigured for six-bed congregate living care — wider openings, rebuilt bathrooms, upgraded utilities. Corona and Darwin renovations are complete and awaiting licensure; Skyland is in active conversion. Photographed August 2026.</p>
+    <h2 class="rv">Работаем открыто</h2>
+    <p class="lede rv">Каждый дом перестраивается под уход на шесть мест: расширенные проёмы, заново собранные санузлы, обновлённые инженерные сети. Ремонт в Короне и Дарвине завершён — дома ждут лицензирования; Скайлэнд в активной работе. Съёмка: август 2026.</p>
   </div>
   <div class="gallery">
-    <figure class="rv"><img src="assets/img/progress/corona-entry.webp" alt="Corona residence — new exterior entry doors" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Renovation complete — new entry</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/corona-interior.webp" alt="Corona residence — finished open interior with new flooring" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Finished interior and new flooring</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/corona-bath.webp" alt="Corona residence — newly tiled bathroom" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Rebuilt bathroom, newly tiled</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/darwin-entry.webp" alt="Darwin residence — completed entry and main hallway" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Renovation complete — entry and hallway</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/darwin-kitchen.webp" alt="Darwin residence — finished kitchen and open living area" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Finished kitchen and living area</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/darwin-room.webp" alt="Darwin residence — finished room" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Rooms finished, awaiting licensure</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/skyland-site.webp" alt="Skyland residence — site set up for interior demolition" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Demolition under way</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/skyland-reframing.webp" alt="Skyland residence — drywall removed, framing exposed" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Drywall out, framing exposed</figcaption></figure>
-    <figure class="rv"><img src="assets/img/progress/skyland-bath.webp" alt="Skyland residence — bathroom stripped for reconfiguration" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Bathroom reconfiguration</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/corona-entry.webp" alt="Корона — новые входные двери" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Ремонт завершён — новый вход</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/corona-interior.webp" alt="Корона — готовый интерьер с новыми полами" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Готовый интерьер и новые полы</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/corona-bath.webp" alt="Корона — санузел с новой плиткой" loading="lazy" decoding="async"><figcaption><span class="g-site">Corona</span> Санузел собран заново, новая плитка</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/darwin-entry.webp" alt="Дарвин — готовый вход и коридор" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Ремонт завершён — вход и коридор</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/darwin-kitchen.webp" alt="Дарвин — готовая кухня и гостиная" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Готовая кухня и гостиная</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/darwin-room.webp" alt="Дарвин — готовая комната" loading="lazy" decoding="async"><figcaption><span class="g-site">Darwin</span> Комнаты готовы, ждём лицензию</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/skyland-site.webp" alt="Скайлэнд — площадка подготовлена к демонтажу" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Идёт демонтаж</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/skyland-reframing.webp" alt="Скайлэнд — гипсокартон снят, открыт каркас" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Гипсокартон снят, открыт каркас</figcaption></figure>
+    <figure class="rv"><img src="assets/img/progress/skyland-bath.webp" alt="Скайлэнд — санузел разобран под перепланировку" loading="lazy" decoding="async"><figcaption><span class="g-site">Skyland</span> Перепланировка санузла</figcaption></figure>
   </div>
-  <h3 class="milestones-head rv">Milestones</h3>
+  <h3 class="milestones-head rv">Хронология</h3>
   <ul class="news-list">
-    <li class="rv"><span class="d">August 2026</span><div><h3>Development under way at CALMORA 1 — Corona</h3><p>Facility conversion, permitting, and licensing preparation are in progress at the Avenida Terrazo residence — the first in the CALMORA pipeline.</p></div></li>
-    <li class="rv"><span class="d">December 2025</span><div><h3>Third property secured, completing the founding network</h3><p>With the Skyland Drive property acquired, CALMORA's initial three-residence development pipeline across Corona and Moreno Valley is complete.</p></div></li>
-    <li class="rv"><span class="d">November 2025</span><div><h3>First property acquired in Corona</h3><p>The Avenida Terrazo residence becomes the first property in the CALMORA network — planned as a purpose-developed, six-bed Congregate Living Health Facility.</p></div></li>
+    <li class="rv"><span class="d">Август 2026</span><div><h3>Работы в CALMORA 1 — Корона</h3><p>Переоборудование, получение разрешений и подготовка к лицензированию идут в доме на Avenida Terrazo — первом в очереди CALMORA.</p></div></li>
+    <li class="rv"><span class="d">Декабрь 2025</span><div><h3>Третий объект приобретён — сеть сформирована</h3><p>С покупкой дома на Skyland Drive первая очередь CALMORA из трёх домов в Короне и Морено-Вэлли укомплектована.</p></div></li>
+    <li class="rv"><span class="d">Ноябрь 2025</span><div><h3>Первый объект — в Короне</h3><p>Дом на Avenida Terrazo становится первым в сети CALMORA — он готовится как дом медицинского ухода (CLHF) на шесть мест.</p></div></li>
   </ul>
 </section>
 
@@ -804,36 +807,36 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.005e
       </svg></span>
     <div class="cols">
       <div>
-        <h4>Contact</h4>
-        <p>Corporate inquiries, partnerships, and pre-opening referrals: contact details coming soon. Use the referral form above and our team will reach out.</p>
+        <h4>Контакты</h4>
+        <p>Корпоративные запросы, партнёрство и предварительные направления: контактные данные появятся в ближайшее время. Заполните форму выше — мы свяжемся с вами.</p>
       </div>
       <div>
-        <h4>Residences</h4>
-        <p>CALMORA 1 — Corona<br>675 Avenida Terrazo<br>Corona, CA 92882</p>
-        <p>CALMORA 2 — Darwin<br>13531 Darwin Drive<br>Moreno Valley, CA 92555</p>
-        <p>CALMORA 3 — Skyland<br>24819 Skyland Drive<br>Moreno Valley, CA 92557</p>
+        <h4>Дома</h4>
+        <p>CALMORA 1 — Корона<br>675 Avenida Terrazo<br>Corona, CA 92882</p>
+        <p>CALMORA 2 — Дарвин<br>13531 Darwin Drive<br>Moreno Valley, CA 92555</p>
+        <p>CALMORA 3 — Скайлэнд<br>24819 Skyland Drive<br>Moreno Valley, CA 92557</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <p><a href="#campuses">Our Residences</a></p>
-        <p><a href="#clinical">Clinical Care</a></p>
-        <p><a href="#admissions">Admissions</a></p>
-        <p><a href="#progress">Building in Public</a></p>
-        <p><a href="#hospitals">For Hospitals</a></p>
-        <p><a href="#families">Patients &amp; Families</a></p>
-        <p><a href="#careers">Careers</a></p>
-        <p><a href="privacy.html">Privacy Policy</a></p>
+        <h4>Разделы</h4>
+        <p><a href="#campuses">Наши дома</a></p>
+        <p><a href="#clinical">Клинический уход</a></p>
+        <p><a href="#admissions">Поступление</a></p>
+        <p><a href="#progress">Ход работ</a></p>
+        <p><a href="#hospitals">Больницам</a></p>
+        <p><a href="#families">Пациентам и семьям</a></p>
+        <p><a href="#careers">Вакансии</a></p>
+        <p><a href="privacy-ru.html">Политика конфиденциальности</a></p>
       </div>
       <div>
-        <h4>Referral partners</h4>
-        <p>Acute-care hospitals &amp; discharge planners</p>
-        <p>Health plans &amp; Medi-Cal managed care</p>
-        <p>Physicians &amp; medical groups</p>
-        <p>HCBA Waiver &amp; case-management teams</p>
-        <p>Workers' compensation case managers</p>
+        <h4>Партнёры по направлениям</h4>
+        <p>Больницы интенсивного лечения и специалисты по выписке</p>
+        <p>Страховые планы и Medi-Cal managed care</p>
+        <p>Врачи и медицинские группы</p>
+        <p>Программа HCBA Waiver и кейс-менеджмент</p>
+        <p>Кейс-менеджеры по производственным травмам</p>
       </div>
     </div>
-    <p class="legal">Calmora Health Group residences are operated by CALMORA 1 CLF Corona LLC and CALMORA 2 Darwin LLC; the operating entity for the Skyland residence is in formation. CALMORA MSO LLC is the planned management and administrative-support organization for the CALMORA platform. Each residence is planned to operate as a Congregate Living Health Facility; no CALMORA residence is currently licensed, operational, or accepting patients, and residences will open only upon licensure by the California Department of Public Health. Projected timelines are management estimates and are subject to change based on construction, permitting, inspections, licensing, staffing, payer enrollment, and other regulatory or operational conditions. © 2026 Calmora Health Group. All rights reserved.</p>
+    <p class="legal">Дома Calmora Health Group управляются компаниями CALMORA 1 CLF Corona LLC и CALMORA 2 Darwin LLC; операционное юридическое лицо для дома Скайлэнд находится в стадии регистрации. CALMORA MSO LLC — планируемая управляющая и административная организация платформы CALMORA. Каждый дом планируется к работе в статусе Congregate Living Health Facility; ни один дом CALMORA в настоящее время не лицензирован, не введён в эксплуатацию и не принимает пациентов. Дома откроются только после получения лицензии Департамента общественного здравоохранения Калифорнии (CDPH). Указанные сроки являются оценками руководства и могут измениться в зависимости от строительства, разрешений, проверок, лицензирования, найма персонала, включения в реестры плательщиков и других регуляторных или операционных условий. © 2026 Calmora Health Group. Все права защищены.</p>
   </div>
 </footer>
 
